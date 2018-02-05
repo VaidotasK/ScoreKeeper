@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/table_3">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.android.scorekeeper.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp">
+
+                <EditText
+                    android:id="@+id/edit_text_name1"
+                    style="@style/EditTextCustomLand"
+                    android:hint="@string/hint_enter_1_name"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/player_a_score"
+                    style="@style/TextViewScoreLand"
+                    android:text="@string/_0"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/button_red_ball_A"
+                    style="@style/Button_ball"
+                    android:drawableLeft="@drawable/ball_red_16"
+                    android:onClick="add1ToA" />
+
+                <Button
+                    android:id="@+id/button_yellow_ball_A"
+                    style="@style/Button_ball"
+                    android:drawableLeft="@drawable/ball_yellow_16"
+                    android:onClick="add2ToA" />
+
+                <Button
+                    android:id="@+id/button_green_ball_A"
+                    style="@style/Button_ball"
+                    android:drawableLeft="@drawable/ball_green_16"
+                    android:onClick="add3ToA" />
+
+                <Button
+                    android:id="@+id/button_brown_ball_A"
+                    style="@style/Button_ball"
+                    android:drawableLeft="@drawable/ball_brown_16"
+                    android:onClick="add4ToA" />
+
+                <Button
+                    android:id="@+id/button_blue_ball_A"
+                    style="@style/Button_ball"
+                    android:drawableLeft="@drawable/ball_blue_16"
+                    android:onClick="add5ToA" />
+
+                <Button
+                    android:id="@+id/button_pink_ball_A"
+                    style="@style/Button_ball"
+                    android:drawableLeft="@drawable/ball_pink3_16"
+                    android:onClick="add6ToA" />
+
+                <Button
+                    android:id="@+id/button_black_ball_A"
+                    style="@style/Button_ball"
+                    android:drawableLeft="@drawable/ball_black_16"
+                    android:onClick="add7ToA" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/holo_red_dark" />
+
+
+                <TextView
+                    style="@style/TextViewFault"
+                    android:text="@string/fault"
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <Button
+                    android:id="@+id/button_fault_plus4_toB"
+                    style="@style/Button_fault"
+                    android:onClick="faultAdd_4_toB"
+                    android:text="+4 pts to opponent" />
+
+                <Button
+                    android:id="@+id/button_fault_plus5_toB"
+                    style="@style/Button_fault"
+                    android:onClick="faultAdd_5_toB"
+                    android:text="+5 pts to opponent" />
+
+                <Button
+                    android:id="@+id/button_fault_plus6_toB"
+                    style="@style/Button_fault"
+                    android:onClick="faultAdd_6_toB"
+                    android:text="+6 pts to opponent" />
+
+                <Button
+                    android:id="@+id/button_fault_plus7_toB"
+                    style="@style/Button_fault"
+                    android:onClick="faultAdd_7_toB"
+                    android:text="+7 pts to opponent" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp">
+
+                <EditText
+                    android:id="@+id/edit_text_name2"
+                    style="@style/EditTextCustomLand"
+                    android:hint="@string/hint_enter_2_name"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/player_b_score"
+                    style="@style/TextViewScoreLand"
+                    android:text="@string/_0"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/button_red_ball_B"
+                    style="@style/Button_ball"
+                    android:drawableLeft="@drawable/ball_red_16"
+                    android:onClick="add1ToB" />
+
+                <Button
+                    android:id="@+id/button_yellow_ball_B"
+                    style="@style/Button_ball"
+                    android:drawableLeft="@drawable/ball_yellow_16"
+                    android:onClick="add2ToB" />
+
+                <Button
+                    android:id="@+id/button_green_ball_B"
+                    style="@style/Button_ball"
+                    android:drawableLeft="@drawable/ball_green_16"
+                    android:onClick="add3ToB" />
+
+                <Button
+                    android:id="@+id/button_brown_ball_B"
+                    style="@style/Button_ball"
+                    android:drawableLeft="@drawable/ball_brown_16"
+                    android:onClick="add4ToB" />
+
+                <Button
+                    android:id="@+id/button_blue_ball_B"
+                    style="@style/Button_ball"
+                    android:drawableLeft="@drawable/ball_blue_16"
+                    android:onClick="add5ToB" />
+
+                <Button
+                    android:id="@+id/button_pink_ball_B"
+                    style="@style/Button_ball"
+                    android:drawableLeft="@drawable/ball_pink3_16"
+                    android:onClick="add6ToB" />
+
+                <Button
+                    android:id="@+id/button_black_ball_B"
+                    style="@style/Button_ball"
+                    android:drawableLeft="@drawable/ball_black_16"
+                    android:onClick="add7ToB" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/holo_red_dark" />
+
+
+                <TextView
+                    style="@style/TextViewFault"
+                    android:text="@string/fault"
+                    android:textColor="@android:color/holo_red_dark" />
+
+                <Button
+                    android:id="@+id/button_fault_plus4_toA"
+                    style="@style/Button_fault"
+                    android:onClick="faultAdd_4_toA"
+                    android:text="@string/_add_4_points_to_opponent" />
+
+                <Button
+                    android:id="@+id/button_fault_plus5_toA"
+                    style="@style/Button_fault"
+                    android:onClick="faultAdd_5_toA"
+                    android:text="@string/add_5_points_to_opponent" />
+
+                <Button
+                    android:id="@+id/button_fault_plus6_toA"
+                    style="@style/Button_fault"
+                    android:onClick="faultAdd_6_toA"
+                    android:text="@string/add_6_points_to_opponent" />
+
+                <Button
+                    android:id="@+id/button_fault_plus7_toA"
+                    style="@style/Button_fault"
+                    android:onClick="faultAdd_7_toA"
+                    android:text="@string/add_7_points_to_opponent" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="12dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:background="@android:color/holo_red_dark"
+                android:onClick="resetScore"
+                android:text="@string/reset"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="8dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
