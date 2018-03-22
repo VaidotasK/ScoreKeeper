@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="paddingOrMargin_XS">4dp</dimen>
+    <dimen name="paddingOrMargin_S">8dp</dimen>
+    <dimen name="paddingOrMargin_M">12dp</dimen>
+    <dimen name="paddingOrMargin_L">16dp</dimen>
+    <dimen name="paddingOrMargin_XL">24dp</dimen>
+    <dimen name="textSize_S">12sp</dimen>
+    <dimen name="textSize_M">16sp</dimen>
+    <dimen name="textSize_L">20sp</dimen>
+    <dimen name="textSize_XL">42sp</dimen>
+    <dimen name="heightOrWidth_0">0dp</dimen>
+    <dimen name="heightOrWidth_L">40dp</dimen>
+    <dimen name="heightOrWidth_XL">48dp</dimen>
+    <dimen name="heightOrWidthLine">1dp</dimen>
+</resources>
