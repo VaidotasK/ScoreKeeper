@@ -10,7 +10,7 @@
     <dimen name="textSize_L">20sp</dimen>
     <dimen name="textSize_XL">42sp</dimen>
     <dimen name="heightOrWidth_0">0dp</dimen>
+    <dimen name="heightOrWidth_1">1dp</dimen>
     <dimen name="heightOrWidth_L">40dp</dimen>
     <dimen name="heightOrWidth_XL">48dp</dimen>
-    <dimen name="heightOrWidthLine">1dp</dimen>
 </resources>

@@ -1,31 +1,27 @@
 
-
 //App is for counting score in SNOOKER
-
 
 package com.example.android.scorekeeper;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
-
-import com.example.android.scorekeeper.R;
 
 public class MainActivity extends AppCompatActivity {
 
     // Declaration of global variables and constants
 
-    static final String PLAYER_1_NAME = "playerAName";
-    static final String PLAYER_2_NAME = "playerBName";
-    static final String SCORE_A = "playerAScore";
-    static final String SCORE_B = "playerBScore";
+    private final String PLAYER_1_NAME = "playerAName";
+    private final String PLAYER_2_NAME = "playerBName";
+    private final String SCORE_A = "playerAScore";
+    private final String SCORE_B = "playerBScore";
     String playerAName;
     String playerBName;
 
     //Track the score of Team A
     int scorePlayerA;
-    //Track the score of Team A
+    //Track the score of Team B
     int scorePlayerB;
 
 
@@ -42,36 +38,44 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
         // Check whether we're recreating a previously destroyed instance
         if (savedInstanceState != null) {
-            setContentView(R.layout.activity_main);
             // Restore value of members from saved state
             playerAName = savedInstanceState.getString(PLAYER_1_NAME);
             playerBName = savedInstanceState.getString(PLAYER_2_NAME);
             scorePlayerA = savedInstanceState.getInt(SCORE_A);
             scorePlayerB = savedInstanceState.getInt(SCORE_B);
-        } else {
-            // Probably initialize members with default values for a new instance
-            setContentView(R.layout.activity_main);
         }
     }
 
-    //Shows scores of player A and B after changing phone position - portrait to landscape and vice versus
-
+    //Shows scores of player A and B after changing phone position (new activity)
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
-        playerAName = savedInstanceState.getString(PLAYER_1_NAME);
-        scorePlayerA = savedInstanceState.getInt(SCORE_A);
         displayForPlayerA(scorePlayerA);
         displayForPlayerB(scorePlayerB);
     }
 
-
-/**
- * Methods for Player 1/A
- */
     /**
+     * Displays the given score for Player A.
+     */
+    public void displayForPlayerA(int score) {
+        TextView scoreView = findViewById(R.id.player_a_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    /**
+     * Displays the given score for Team B.
+     */
+    public void displayForPlayerB(int score) {
+        TextView scoreView = findViewById(R.id.player_b_score);
+        scoreView.setText(String.valueOf(score));
+    }
+
+    /**
+     *  Methods for Player 1/A
+     *
      * Increases score for Player A by 1
      */
     public void add1ToA(View view) {
@@ -136,7 +140,6 @@ public class MainActivity extends AppCompatActivity {
         displayForPlayerA(scorePlayerA);
     }
 
-
     /**
      * Increases score for Player A by 5 for Player B fault
      */
@@ -144,7 +147,6 @@ public class MainActivity extends AppCompatActivity {
         scorePlayerA += 5;
         displayForPlayerA(scorePlayerA);
     }
-
 
     /**
      * Increases score for Player A by 6 for Player B fault
@@ -154,7 +156,6 @@ public class MainActivity extends AppCompatActivity {
         displayForPlayerA(scorePlayerA);
     }
 
-
     /**
      * Increases score for Player A by 7 for Player B fault
      */
@@ -163,21 +164,9 @@ public class MainActivity extends AppCompatActivity {
         displayForPlayerA(scorePlayerA);
     }
 
-
-    /**
-     * Displays the given score for Player A.
-     */
-    public void displayForPlayerA(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.player_a_score);
-        scoreView.setText(String.valueOf(score));
-    }
-
-
     /**
      * Methods for Team B
-     */
-
-    /**
+     *
      * Increases score for Player B by 1
      */
     public void add1ToB(View view) {
@@ -192,7 +181,6 @@ public class MainActivity extends AppCompatActivity {
         scorePlayerB += 2;
         displayForPlayerB(scorePlayerB);
     }
-
 
     /**
      * Increases score for Player B by 3
@@ -242,7 +230,6 @@ public class MainActivity extends AppCompatActivity {
         displayForPlayerB(scorePlayerB);
     }
 
-
     /**
      * Increases score for Player B by 5 for Player A fault
      */
@@ -251,7 +238,6 @@ public class MainActivity extends AppCompatActivity {
         displayForPlayerB(scorePlayerB);
     }
 
-
     /**
      * Increases score for Player B by 6 for Player A fault
      */
@@ -259,7 +245,6 @@ public class MainActivity extends AppCompatActivity {
         scorePlayerB += 6;
         displayForPlayerB(scorePlayerB);
     }
-
 
     /**
      * Increases score for Player B by 7 for Player A fault
@@ -276,13 +261,4 @@ public class MainActivity extends AppCompatActivity {
         displayForPlayerA(scorePlayerA);
         displayForPlayerB(scorePlayerB);
     }
-
-    /**
-     * Displays the given score for Team B.
-     */
-    public void displayForPlayerB(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.player_b_score);
-        scoreView.setText(String.valueOf(score));
-    }
-
 }

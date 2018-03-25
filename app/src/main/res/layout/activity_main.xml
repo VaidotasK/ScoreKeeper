@@ -6,7 +6,7 @@
 
     <LinearLayout xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:context="com.example.android.scorekeeper.MainActivity">
 
@@ -14,20 +14,20 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:paddingTop="16dp">
+            android:paddingTop="@dimen/paddingOrMargin_L">
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="@dimen/heightOrWidth_0"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:paddingLeft="24dp"
-                android:paddingRight="24dp">
+                android:paddingLeft="@dimen/paddingOrMargin_XL"
+                android:paddingRight="@dimen/paddingOrMargin_XL">
 
                 <EditText
                     android:id="@+id/edit_text_name1"
                     style="@style/EditTextCustom"
-                    android:hint="@string/hint_enter_1_name"
+                    android:hint="@string/hint_enter_first_name"
                     android:textColor="@android:color/black" />
 
                 <TextView
@@ -80,7 +80,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="@dimen/heightOrWidth_1"
                     android:background="@android:color/holo_red_dark" />
 
 
@@ -93,40 +93,40 @@
                     android:id="@+id/button_fault_plus4_toB"
                     style="@style/Button_fault"
                     android:onClick="faultAdd_4_toB"
-                    android:text="+4 pts to opponent" />
+                    android:text="@string/_add_4_points_to_opponent" />
 
                 <Button
                     android:id="@+id/button_fault_plus5_toB"
                     style="@style/Button_fault"
                     android:onClick="faultAdd_5_toB"
-                    android:text="+5 pts to opponent" />
+                    android:text="@string/add_5_points_to_opponent" />
 
                 <Button
                     android:id="@+id/button_fault_plus6_toB"
                     style="@style/Button_fault"
                     android:onClick="faultAdd_6_toB"
-                    android:text="+6 pts to opponent" />
+                    android:text="@string/add_6_points_to_opponent" />
 
                 <Button
                     android:id="@+id/button_fault_plus7_toB"
                     style="@style/Button_fault"
                     android:onClick="faultAdd_7_toB"
-                    android:text="+7 pts to opponent" />
+                    android:text="@string/add_7_points_to_opponent" />
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="@dimen/heightOrWidth_0"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical"
-                android:paddingLeft="24dp"
-                android:paddingRight="24dp">
+                android:paddingLeft="@dimen/paddingOrMargin_XL"
+                android:paddingRight="@dimen/paddingOrMargin_XL">
 
                 <EditText
                     android:id="@+id/edit_text_name2"
                     style="@style/EditTextCustom"
-                    android:hint="@string/hint_enter_2_name"
+                    android:hint="@string/hint_enter_second_name"
                     android:textColor="@android:color/black" />
 
                 <TextView
@@ -179,7 +179,7 @@
 
                 <View
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
+                    android:layout_height="@dimen/heightOrWidth_1"
                     android:background="@android:color/holo_red_dark" />
 
 
@@ -220,18 +220,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center_horizontal"
-            android:paddingBottom="12dp">
+            android:paddingBottom="@dimen/paddingOrMargin_M">
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/paddingOrMargin_M"
                 android:background="@android:color/holo_red_dark"
                 android:onClick="resetScore"
                 android:text="@string/reset"
-                android:textColor="@android:color/white"
-                android:layout_marginTop="8dp"/>
+                android:textColor="@android:color/white" />
 
         </RelativeLayout>
 

@@ -9,31 +9,31 @@
     </style>
 
     <style name="EditTextCustom" parent="AppTheme">
-    <!-- Customize your theme here. -->
-    <item name="android:layout_width">match_parent</item>
-    <item name="android:layout_height">wrap_content</item>
-    <item name="android:layout_marginTop">8dp</item>
-    <item name="android:gravity">center_horizontal</item>
-    <item name="android:textSize">20sp</item>
-    <item name="android:background">#64DD17</item>
-    <item name="android:inputType">textCapWords</item>
-</style>
+        <!-- Customize your theme here. -->
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/paddingOrMargin_S</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textSize">@dimen/textSize_L</item>
+        <item name="android:background">@color/colorEditText</item>
+        <item name="android:inputType">textCapWords</item>
+    </style>
 
     <style name="EditTextCustomLand" parent="AppTheme">
         <!-- Customize your theme here. -->
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginTop">@dimen/paddingOrMargin_S</item>
         <item name="android:gravity">center_horizontal</item>
-        <item name="android:textSize">20sp</item>
-        <item name="android:background">#64DD17</item>
+        <item name="android:textSize">@dimen/textSize_L</item>
+        <item name="android:background">@color/colorEditText</item>
         <item name="android:inputType">textCapWords</item>
     </style>
 
     <style name="Button_ball" parent="AppTheme">
-        <item name="android:layout_width">40dp</item>
-        <item name="android:layout_height">40dp</item>
-        <item name="android:layout_marginBottom">4dp</item>
+        <item name="android:layout_width">@dimen/heightOrWidth_L</item>
+        <item name="android:layout_height">@dimen/heightOrWidth_L</item>
+        <item name="android:layout_marginBottom">@dimen/paddingOrMargin_XS</item>
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
 
@@ -41,8 +41,8 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_horizontal</item>
-        <item name="android:layout_marginBottom">8dp</item>
-        <item name="android:textSize">42sp</item>
+        <item name="android:layout_marginBottom">@dimen/paddingOrMargin_S</item>
+        <item name="android:textSize">@dimen/textSize_XL</item>
     </style>
 
     <style name="TextViewScoreLand" parent="AppTheme">
@@ -50,28 +50,27 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:gravity">center</item>
-        <item name="android:layout_marginBottom">8dp</item>
-        <item name="android:textSize">42sp</item>
+        <item name="android:layout_marginBottom">@dimen/paddingOrMargin_S</item>
+        <item name="android:textSize">@dimen/textSize_XL</item>
     </style>
 
     <style name="TextViewFault" parent="AppTheme">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:background">#80000000</item>
-        <item name="android:textSize">16sp</item>
-        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:background">@color/colorTextViewFaultBackground</item>
+        <item name="android:textSize">@dimen/textSize_L</item>
+        <item name="android:layout_marginBottom">@dimen/paddingOrMargin_M</item>
         <item name="android:gravity">center_horizontal</item>
     </style>
 
     <style name="Button_fault" parent="AppTheme">
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">48dp</item>
-        <item name="android:layout_marginBottom">4dp</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:layout_height">@dimen/heightOrWidth_XL</item>
+        <item name="android:layout_marginBottom">@dimen/paddingOrMargin_XS</item>
+        <item name="android:textSize">@dimen/textSize_M</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:background">#90A4AE</item>
-        <item name="android:padding">8dp</item>
+        <item name="android:background">@color/colorButtonFaultBackground</item>
         <item name="android:layout_gravity">center_horizontal</item>
     </style>
 

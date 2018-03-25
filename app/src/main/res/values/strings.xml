@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Score Keeper</string>
-    <string name="hint_enter_1_name">Enter 1 Name</string>
-    <string name="hint_enter_2_name">Enter 2 Name</string>
+    <string name="hint_enter_first_name">Enter Name 1</string>
+    <string name="hint_enter_second_name">Enter Name 2</string>
     <string name="_0">0</string>
     <string name="fault">Fault</string>
     <string name="_add_4_points_to_opponent">+4 pts to opponent</string>

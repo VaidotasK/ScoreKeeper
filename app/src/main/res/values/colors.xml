@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <!--Edit text for names color-->
+    <color name="colorEditText">#64DD17</color>
+    <!--TextView FAULT  background color-->
+    <color name="colorTextViewFaultBackground">#80000000</color>
+    <!--Buttons fault background color-->
+    <color name="colorButtonFaultBackground">#90A4AE</color>
 </resources>
